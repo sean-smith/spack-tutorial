@@ -1,10 +1,19 @@
 +++
-title = "AWS Workshop Template"
+title = "Spack Workshop"
 chapter = true
 weight = 1
 +++
-This template is the default for creating workshop content for AWS Solutions Architecture. It runs on Hugo, is driven by Markdown, and provides an interactive experience for workshop attendees. The pages in this template provide examples for how to write your own content using the components available.
 
-{{% button href="https://issues.amazon.com/issues/create?template=f084dc94-e920-4d98-80f7-252d5cc7ce00" icon="fas fa-bug" %}}Report an issue{{% /button %}}
-{{% button href="mailto:aws-sa-customer-engagements@amazon.com" icon="fas fa-envelope" %}}Contact Event Outfitters{{% /button %}}
-{{% button href="https://w.amazon.com/bin/view/AWS/Teams/SA/Customer_Engagements/" icon="fas fa-graduation-cap" %}}Learn more{{% /button %}}
+![Spack Logo](https://spack.io/assets/images/spack-logo-white.svg)
+
+This tutorial gets you setup with Spack on AWS ParallelCluster.
+
+To get started, we'll assume you have an AWS account and are familiar basic command line usage.
+
+<center>{{% button href="/en/spack.html" icon="fas fa-rocket" %}}Get Started!{{% /button %}}</center>
+
+Or...
+
+{{% button href="https://github.com/sean-smith/spack-tutorial/issues" icon="fas fa-bug" %}}Report an issue on GitHub{{% /button %}}
+{{% button href="mailto:seaam@amazon.com" icon="fas fa-envelope" %}}Contact AWS HPC Team{{% /button %}}
+{{% button href="https://aws.amazon.com/hpc/" icon="fas fa-graduation-cap" %}}Learn more{{% /button %}}
