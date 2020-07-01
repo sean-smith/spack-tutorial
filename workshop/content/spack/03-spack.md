@@ -11,7 +11,7 @@ Spack is already installed on the cluster, to check the version run:
 
 ```bash
 $ spack --version
-0.13.4
+0.15.0
 ```
 
 ## 2. Install Software

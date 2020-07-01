@@ -24,7 +24,7 @@ Scroll to the bottom of the page, and leave most of the Parameters as they are.
 4. Select `I acknowledge that AWS Cloudformation might create IAM resources`.
 5. Now, click `Create Stack` to deploy the QuickStart Environment.
 
-![CloudFormation Create Stack](https://user-images.githubusercontent.com/187202/79027970-db4d4e00-7b53-11ea-89c1-7feba2029df9.png)
+![CloudFormation Create Stack](/images/create_stack.png)
 
 ### Deployment
 Deployment takes about 15 minutes. This QuickStart provisions:
@@ -36,7 +36,7 @@ Go get a cup of ☕️ while waiting for the stacks to complete.
 
 Provisioning is complete when all Stacks show `CREATE_COMPLETE`.
 
-![CloudFormation CREATE_COMPLETE](https://user-images.githubusercontent.com/187202/79025531-ab01b180-7b4b-11ea-8234-9bc393f69893.png)
+![CloudFormation CREATE_COMPLETE](/images/cfn_console.png)
 
 ### Access Cluster
 
@@ -44,7 +44,7 @@ When all stacks show `CREATE_COMPLETE`, click on the Outputs tab of the `AWS-HPC
 
 Click on the `ResearchWorkspaceURL` to go directly to the Cloud9 Instance that was created. 
 
-![CloudFormation Outputs Tab](https://user-images.githubusercontent.com/187202/79085211-3cfcec00-7cfd-11ea-94f9-8a8cf88e535b.png)
+![CloudFormation Outputs Tab](/images/cfn_output.png)
 
 <!-- 
 This stack creates a tightly-coupled cluster with the following config:
