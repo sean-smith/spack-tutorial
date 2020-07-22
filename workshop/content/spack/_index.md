@@ -6,7 +6,7 @@ pre: "<b>I ⁃ </b>"
 tags: ["HPC", "Application", "Spack"]
 ---
 
-![Spack Logo](https://spack.io/assets/images/spack-logo-white.svg)
+![Spack Logo](/images/spack.svg)
 
 This tutorial gets you setup with Spack on AWS ParallelCluster.
 

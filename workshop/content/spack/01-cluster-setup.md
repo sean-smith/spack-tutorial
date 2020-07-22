@@ -1,28 +1,29 @@
 +++
-title = "a. Workshop Initial Setup"
+title = "b. Workshop Initial Setup"
 date = 2019-09-18T10:46:30-04:00
 weight = 20
 tags = ["tutorial", "spack"]
 +++
 
 ### Step 1
-To get started click "Create Stack":
+To get started click "Launch Stack":
 
 | Region       | Stack                                                                                                                                                                                                                                                                                                              |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| us-east-1    | [![amplifybutton](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?stackName=AWS-HPC-Quickstart&templateURL=https://notearshpc-quickstart.s3.amazonaws.com/cfn.yaml&param_ConfigS3URI=s3://seaam/config.ini)       |
+| us-east-1 (N. Virginia)    | {{% button href="https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?stackName=AWS-HPC-Quickstart&templateURL=https://notearshpc-quickstart.s3.amazonaws.com/cfn.yaml&param_ConfigS3URI=https://notearshpc-quickstart.s3.amazonaws.com/config.ini" icon="fas fa-rocket" %}}Launch Stack{{% /button %}} |
 
 ### Step 2
-If you have not authenticated with the AWS Management Console, you will be prompted to login with the AWS Account ID or alias, IAM user name, and password that was provided to you.
+In [Account Setup](/00-account-setup.html) we authenticated with the AWS Console. If you are running this tutorial on your own (not in an AWS run event), you'll be prompted to login to the AWS Management Console at this point. 
 
 ### Step 3
-Scroll to the bottom of the page, and leave most of the Parameters as they are.
+On the next page you'll be presented with a bunch of parameters, most of which we'll leave as default. Change the following parameters:
 
-1. Enter an initial `BudgetLimit` for the project. This will be used to track spending and send an alert when you cross 80%.
-2. Update `NotificationEmail` that will receive budget notifications.
-3. Fill out the `UserPasswordParameter` with a temporary password. Keep it simple! You will be prompted to change it on first use.
-4. Select `I acknowledge that AWS Cloudformation might create IAM resources`.
-5. Now, click `Create Stack` to deploy the QuickStart Environment.
+1. Change the name of the stack to `[Yourname]-Spack-Cluster`
+2. Enter an initial `BudgetLimit` for the project. This will be used to track spending and send an alert when you cross 80%.
+3. Update `NotificationEmail` that will receive budget notifications.
+4. Fill out the `UserPasswordParameter` with a temporary password. Keep it simple! You will be prompted to change it on first use.
+5. Select `I acknowledge that AWS Cloudformation might create IAM resources`.
+6. Now, click `Create Stack` to deploy the QuickStart Environment.
 
 ![CloudFormation Create Stack](/images/create_stack.png)
 
@@ -30,7 +31,7 @@ Scroll to the bottom of the page, and leave most of the Parameters as they are.
 Deployment takes about 15 minutes. This QuickStart provisions:
 
 * A Cloud9 Integrated Development Environment (IDE) in the selected region;
-* an AWS Parallel Cluster environment, named `hpc-cluster`, pre-configured with Spack;
+* an AWS Parallel Cluster environment, named `hpc-cluster`
 
 Go get a cup of ☕️ while waiting for the stacks to complete.
 
@@ -40,7 +41,7 @@ Provisioning is complete when all Stacks show `CREATE_COMPLETE`.
 
 ### Access Cluster
 
-When all stacks show `CREATE_COMPLETE`, click on the Outputs tab of the `AWS-HPC-Quickstart` stack. 
+When all stacks show `CREATE_COMPLETE`, click on the Outputs tab of the `[Yourname]-Spack-Cluster` stack. 
 
 Click on the `ResearchWorkspaceURL` to go directly to the Cloud9 Instance that was created. 
 
