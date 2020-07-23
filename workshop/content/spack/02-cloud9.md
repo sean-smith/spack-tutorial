@@ -12,13 +12,12 @@ Navigate to your `ResearchWorkspaceUrl`, as shown at the end of the last section
 
 ![Cloud9](/images/cloud9.png)
 
+Cloud9 is a powerful Integrated Development Environment where you can write, run, and debug code via your browser. Cloud9 provides the software and tooling needed for dynamic programming languages including JavaScript, Python, PHP, Ruby, Go, and C++. Visit the [AWS Cloud9 Features page](https://aws.amazon.com/cloud9/details/) for more information.
+
 {{% notice info %}}
-**Pro Tip:** To get this awesome black theme click on the <i class="fas fa-cog"></i>  icon in the upper right and click "Themes" on the prefences pane, and select "Jett"
+**Pro Tip:** To get this awesome black theme click on the <i class="fas fa-cog"></i>  icon in the upper right and click "Themes" on the prefences pane, and select "Jett":
 ![Cloud9](/images/theme.png)
-
 {{% /notice %}}
-
-Cloud9 is a powerful Integrated Development Environment where you can write, run, and debug code via your browser. Cloud9 provides the software and tooling needed for dynamic programming languages including JavaScript, Python, PHP, Ruby, Go, and C++. Visit the [AWS Cloud9 Features page](https://aws.amazon.com/cloud9/details/) for more informatiom. 
 
 ## 2. Connect to the HPC Environment
 
