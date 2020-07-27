@@ -25,7 +25,7 @@ while [ \
 sleep 1
 done
 
-if [[ -d /dev/xvda ]] && [ $(readlink -f /dev/xvda) = "/dev/xvda" ]
+if [ -e /dev/xvda1 ]
 then
   # Rewrite the partition table so that the partition takes up all the space that it can.
   sudo growpart /dev/xvda 1
