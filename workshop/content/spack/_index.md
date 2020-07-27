@@ -6,7 +6,7 @@ pre: "<b>I ⁃ </b>"
 tags: ["HPC", "Application", "Spack"]
 ---
 
-![Spack Logo](/images/spack.svg)
+![Spack Logo](/images/spack-dark.svg)
 
 Spack is a package manager for supercomputers, Linux, and macOS. It makes installing scientific software easy. Spack isn’t tied to a particular language; you can build a software stack in Python or R, link to libraries written in C, C++, or Fortran, and easily [swap compilers](https://spack.readthedocs.io/en/latest/getting_started.html#compiler-configuration) or target specific [microarchitectures](https://spack.readthedocs.io/en/latest/basic_usage.html#support-for-specific-microarchitectures). Learn more [here](https://spack.io/about/).
 

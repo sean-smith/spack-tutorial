@@ -11,7 +11,7 @@ This step only applies if you're participating in an AWS run event. If not skip 
 
 ### Step 1
 
-Check your email for a unique hash code, like `ef90b8d904f1`. Make note of that code. If you did not receive a hash code, but believe you should have, email seaam@amazon.com
+Check your email for a unique hash code, like `ef90b8d904f1-not-real-code`. Make note of that code. If you did not receive a hash code, but believe you should have, email seaam@amazon.com
 
 ### Step 2
 

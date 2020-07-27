@@ -4,7 +4,7 @@ chapter = true
 weight = 1
 +++
 
-![Spack Logo](/images/spack.svg)
+![Spack Logo](/images/spack-dark.svg)
 
 ### This tutorial the following parts:
 
