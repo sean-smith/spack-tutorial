@@ -30,7 +30,7 @@ spack list sra
 spack install sra-toolkit
 ```
 
-![Spack install SRA](https://user-images.githubusercontent.com/187202/79090384-1ba4fb80-7d0f-11ea-9e79-a5251ee2d454.png)
+![Spack install SRA](/images/spack_on_pcluster/spack_sra.png)
 
 Once it's been installed you can load and unload SRA-Toolkit with 
 
@@ -39,4 +39,4 @@ module avail
 module load intelmpi sra-toolkit/2.9.6-gcc-7.5.0
 ```
 
-![](https://user-images.githubusercontent.com/187202/79100229-a09e0e00-7d2b-11ea-9775-3b0ab8a4e522.png)
+![Module Load Intel MPI and SRA](/images/spack_on_pcluster/sra_load.png)
