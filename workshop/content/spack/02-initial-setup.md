@@ -43,3 +43,18 @@ Your AWS Cloud9 instance will be ready in a few minutes!
 Now is a perfect time to grab a cup of ☕️
 
 ![Cloud9 Create](/images/introductory-steps/cloud9-create.png)
+
+{{%expand "🕷 Bug: If you see the error: Failed to create environments: [Yourname]-Spack-Tutorial (Click to expand)" %}}
+If you see the error ```Failed to create environments: Sean-Spack-Tutorial```
+ ![Cloud9 Error](/images/cloud9_error.png)
+1. Visit the [CloudFormation Console](https://console.aws.amazon.com/cloudformation/home?region=us-east-1)
+2. Find the Stack that failed to create, It'll be named `aws-cloud9-Sean-Spack-Tutorial...`
+3. Click on the **Events** tbab and scroll down to find the `CREATE_FAILED` error. 
+![CloudFormation Cloud9 Error](/images/cfn_cloud9_error.png)  
+```bash
+Your requested instance type (m5.large) is not supported in your requested Availability Zone (us-east-1e). Please retry your request by not specifying an Availability Zone or choosing us-east-1a, us-east-1b, us-east-1c, us-east-1d, us-east-1f. (Service: AmazonEC2; Status Code: 400; Error Code: Unsupported; Request ID: cedce320-3601-4540-9857-2726c1bb6288)
+``` 
+4. Next go back to Cloud9 and re-try creation. Under the **Network Settings** select one the Availibility Zones listed in the error message, i.e. `us-east-1a, us-east-1b, us-east-1c, us-east-1d, us-east-1f`
+![network settings](/images/network_settings.png)
+{{% /expand%}}
+5. Create it and you're set!
