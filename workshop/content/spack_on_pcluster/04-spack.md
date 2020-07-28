@@ -1,5 +1,5 @@
 +++
-title = "d. Spack Intro"
+title = "e. Spack Intro"
 date = 2019-09-18T10:46:30-04:00
 weight = 40
 tags = ["tutorial", "spack"]

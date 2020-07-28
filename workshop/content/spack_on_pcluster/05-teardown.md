@@ -1,5 +1,5 @@
 +++
-title = "e. Delete"
+title = "f. Delete"
 date = 2019-09-18T10:46:30-04:00
 weight = 50
 tags = ["tutorial", "spack"]
