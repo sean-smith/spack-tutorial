@@ -44,7 +44,7 @@ Now is a perfect time to grab a cup of ☕️
 
 ![Cloud9 Create](/images/introductory-steps/cloud9-create.png)
 
-{{%expand "🕷 Bug: If you see the error: Failed to create environments: [Yourname]-Spack-Tutorial (Click to expand)" %}}
+{{%expand "🕷 Bug: If you see the error: Failed to create environments: ... (Click to expand)" %}}
 If you see the error ```Failed to create environments: Sean-Spack-Tutorial```
  ![Cloud9 Error](/images/cloud9_error.png)
 1. Visit the [CloudFormation Console](https://console.aws.amazon.com/cloudformation/home?region=us-east-1)
@@ -56,5 +56,5 @@ Your requested instance type (m5.large) is not supported in your requested Avail
 ``` 
 4. Next go back to Cloud9 and re-try creation. Under the **Network Settings** select one the Availibility Zones listed in the error message, i.e. `us-east-1a, us-east-1b, us-east-1c, us-east-1d, us-east-1f`
 ![network settings](/images/network_settings.png)
-{{% /expand%}}
 5. Create it and you're set!
+{{% /expand%}}
