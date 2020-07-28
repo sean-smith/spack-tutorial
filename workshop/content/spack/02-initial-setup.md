@@ -20,10 +20,10 @@ Next navigate to the Cloud9 Console by searching for **Cloud9** in the search ba
 
 ![Cloud9 Navigate](/images/cloud9_navigate.png)
 
-{{% notice info %}}
-**Pro-tip** You can pin the Cloud9 link to the Top bar of your AWS console. Just click the <i class="fa fa-thumb-tack" aria-hidden="true"></i> icon in the upper bar and drag the Cloud9 Logo into the bar.
+{{%expand "💡Pro Tip: Pin Cloud9 (Click to expand)" %}}
+You can pin the Cloud9 link to the Top bar of your AWS console. Just click the <i class="fa fa-thumbtack" aria-hidden="true"></i> icon in the upper bar and drag the Cloud9 Logo into the bar.
 ![Pin Cloud9](/images/drag_cloud9.png)
-{{% /notice %}}
+{{% /expand%}}
 
 
 #### Step 4: Create Cloud9 IDE
