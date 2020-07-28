@@ -21,7 +21,7 @@ Now we're going to setup the instance for this tutorial:
 ![Cloud9](/images/theme.png)
 {{% /expand%}}
 
-## 2. Grow the Root Partition 
+<!-- ## 2. Grow the Root Partition 
 
 By default the root volume store (`/`) of an EC2 instance is 10 GB. We're going to increase that to 30GB in order to install packages with spack.
 
@@ -33,7 +33,7 @@ df -h # shows / is now 30GB
 
 For example:
 
-![grow root volume store](/images/grow.png)
+![grow root volume store](/images/grow.png) -->
 
 {{% notice info %}}
 If you get stuck in vim, know that Cloud9 sometime intercepts **Esc**. Hit `Ctrl-c` instead of escape.
