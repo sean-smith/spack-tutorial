@@ -11,7 +11,7 @@ weight = 1
 - Setup Spack on AWS Cloud9
 - Setup a cluster using AWS ParallelCluster, install Spack, and configure it
 
-<center>{{% button href="/en/spack.html" icon="fas fa-rocket" %}}Get Started!{{% /button %}}</center>
+<center>{{% button href="/spack.html" icon="fas fa-rocket" %}}Get Started!{{% /button %}}</center>
 
 Or...
 
