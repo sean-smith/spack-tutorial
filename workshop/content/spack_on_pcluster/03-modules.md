@@ -66,3 +66,64 @@ spack install osu-micro-benchmarks
 You'll see it picks up the external package and uses that as the **mpi** version.
 
 ![OSU Microbenchmarks with Spack](/images/spack_on_pcluster/osu_openmpi.png)
+
+Now that we have the **osu-micro-benchmarks** we can run it locally to verify the installation:
+
+```bash
+module load osu-micro-benchmarks openmpi
+mpirun -np 2 osu_latency
+```
+
+Now we can submit a job and have it run on 2 compute nodes:
+
+```bash
+cat > c5n_osu_latency.sbatch << EOF
+#!/bin/bash
+#SBATCH --job-name=osu-latency-job
+#SBATCH --ntasks=2 --nodes=2
+#SBATCH --output=osu_latency.out
+
+module load osu-micro-benchmarks openmpi
+srun osu_latency
+EOF
+
+sbatch c5n_osu_latency.sbatch
+watch squeue
+```
+
+This will take a few minutes to launch the instances then start running the job, until then you'll see:
+
+```bash
+$ watch squeue
+Every 2.0s: squeue                                                                               ip-10-0-1-151: Wed Jul 29 17:23:01 2020
+
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+                 4   compute osu-late   ubuntu PD       0:00      2 (Nodes required for job are DOWN, DRAINED or reserved for jobs in hi
+gher priority partitions)
+```
+
+Once the job runs we can review the results in the `osu_latency.out`:
+
+```bash
+$ less osu_latency.out
+# OSU MPI Latency Test v5.6.2
+# Size          Latency (us)
+0                      19.86
+1                      19.93
+2                      19.91
+4                      19.92
+8                      20.04
+16                     20.50
+32                     20.50
+64                     20.58
+128                    20.72
+256                    21.30
+512                    21.53
+1024                   22.27
+2048                   23.85
+4096                   27.65
+8192                   33.25
+16384                  39.34
+32768                  58.13
+...
+```
