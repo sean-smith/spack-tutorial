@@ -63,7 +63,7 @@ You can see that we have an **openmpi** package installed. We're going to use th
 spack install osu-micro-benchmarks
 ```
 
-You'll see it picks up the external package and uses that as the **mpi** version.
+You'll see it picks up the external package from `/opt/amazon/openmpi` and uses that as the **mpi** version.
 
 ![OSU Microbenchmarks with Spack](/images/spack_on_pcluster/osu_openmpi.png)
 
