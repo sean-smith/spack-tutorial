@@ -6,7 +6,7 @@ tags = ["tutorial", "spack"]
 +++
 
 {{% notice info %}}
-This step only applies if you're participating in an AWS run event. If not skip to [Cluster Setup](01-cluster-setup.html) and login to the [AWS Console](console.aws.amazon.com) using your credentials.
+This step only applies if you're participating in an AWS run event. If not skip to [Cluster Setup](/spack_on_pcluster/01-cluster-setup.html) and login to the [AWS Console](https://console.aws.amazon.com) using your credentials.
 {{% /notice %}}
 
 ### Step 1
